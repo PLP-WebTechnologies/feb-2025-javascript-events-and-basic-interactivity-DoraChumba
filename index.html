@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Event Handling </h1>
+        <button id="clickButton">Click Me!</button>
+        <p id="message">Hover over the button to see a hover effect.</p>
+    </div>
+
+    <div class="container">
+        <h1>Interactive Elements </h1>
+
+        <!-- Button that changes text and color -->
+        <button id="changeButton">Click Me!</button>
+        <p id="changeText">This text will change.</p>
+
+        
+        <!-- Tabs/Accordion -->
+        <div class="accordion">
+            <button class="accordion-button" onclick="toggleAccordion(1)">Event Handling</button>
+            <div class="accordion-content" id="accordionContent1">
+                <p>Event Handling: Use events like onclick, onmouseover, and onchange to respond to user actions dynamically.</p>
+            </div>
+            <button class="accordion-button" onclick="toggleAccordion(2)">Interactive Elements</button>
+            <div class="accordion-content" id="accordionContent2">
+                <p>Interactive Elements: Enhance your website with buttons, sliders, and modals for engaging user interfaces</p>
+            </div>
+            <button class="accordion-button" onclick="toggleAccordion(3)">Form Validation</button>
+            <div class="accordion-content" id="accordionContent3">
+                <p>Form Validation: Improve usability with real-time feedback, required fields, and custom validation</p>
+            </div>
+        </div>
+        </div>
+
+<div class="container">
+        <h1>Form Validation </h1>
+        <form id="validationForm">
+            <div class="form-group">
+                <label for="username">Username </label>
+                <input type="text" id="username" name="username" required>
+                <small id="usernameFeedback"></small>
+            </div>
+            <div class="form-group">
+                <label for="email">Email </label>
+                <input type="email" id="email" name="email" required>
+                <small id="emailFeedback"></small>
+            </div>
+         <div class="form-group">
+                <label for="password">Password (required, min 8 characters)</label>
+                <input type="password" id="password" name="password" required minlength="8">
+                <small id="passwordFeedback"></small>
+            </div>
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
